@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AddAlarmActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="#EDEDED">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#778899"
+            android:title="hello"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancel_addalarm"
+                    android:src="@drawable/ic_chevron_left_white_48dp"
+                    android:backgroundTint="#778899"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/sure_addalarm"
+                    android:src="@drawable/ic_check_white_48dp"
+                    android:backgroundTint="#778899"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <include layout="@layout/content_addalarm" />
+
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
